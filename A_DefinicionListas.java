@@ -1,11 +1,11 @@
-package listas;
+package Listas;
 
 import java.util.List;
 import java.util.ArrayList;
 
 import java.util.Scanner;
 
-public class A1_DefinicionListas {
+public class A_DefinicionListas {
 	public static void main(String[] args) {
 		// Creamos una lista vacía
 		// Dentro de <> va el tipo de dato.

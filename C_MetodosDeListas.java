@@ -1,10 +1,10 @@
-package listas;
+package Listas;
 
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class B_MetodosDeListas {
+public class C_MetodosDeListas {
 	public static void main(String[] args) {
 		ArrayList<String> frutas = new ArrayList<>();
 

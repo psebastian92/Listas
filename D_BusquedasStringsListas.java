@@ -1,11 +1,11 @@
-package listas;
+package Listas;
 
 import java.util.List;
 import java.util.ArrayList;
 
 import java.util.Scanner;
 
-public class C_BusquedasStringsListas {
+public class D_BusquedasStringsListas {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		// Crear una lista
