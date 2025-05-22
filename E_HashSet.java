@@ -1,5 +1,6 @@
-// LISTAS: estructuras de datos ordenadas, modificables, y cada una del mismo tipo de datos (string, int, char, float, etc).
-
+// Un HashSet es una estructura de datos en Java que se usa para guardar elementos sin repetirlos y sin importar el orden.
+// Elimina elementos duplicados, pero NO guarda elementos por índice ordenadamente como una lista, o un array.
+// HashSet NO es una lista. Pertenece al grupo de Colecctions (al igual que las listas), pero no es exactamente lo mismo.
 package Listas;
 
 import java.util.ArrayList;
@@ -27,13 +28,20 @@ public class E_HashSet {
 		numeros.clear();
 
 		// Paso 4: Añadir todos los elementos del HashSet de vuelta a la lista, ya que HashSet NO permite elementos duplicados.
+		// HashSet NO puede acceder a sus elementos por índice ( get.(i) ) como una lista. 
+		// Por eso, hay que vaciar la lista "numeros" y agregarle todos los elementos de HashSet.
 		numeros.addAll(set);
 
 		// Paso 5: Imprimir la lista sin duplicados
 		Collections.sort(numeros);
 		System.out.println("Lista sin duplicados: " + numeros);
-		
-	
+	/*
+	 * EN RESUMEN:
+	 * - Se crea una lista. Se le ingresan datos.
+	 * - Se pasan todos los datos a un HashSet, que elimina duplicados.
+	 * - Se vacía la primera lista.
+	 * - Se pasan todos los elementos de HashSet a la lista.
+	 * */
 	}
 
 }
