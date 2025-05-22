@@ -1,3 +1,16 @@
+/*
+ * Las listas son estructuras que nos permiten guardar muchos datos del mismo tipo
+ * (por ejemplo, muchos nombres o muchos precios) en una sola variable.
+ * 
+ * A diferencia de los arrays, las listas pueden crecer o achicarse según lo necesitemos,
+ * es decir, podemos agregar o quitar elementos fácilmente.
+ * 
+ * En este ejemplo, usamos listas para guardar los nombres de productos y sus precios.
+ * Usamos List<String> para guardar palabras (nombres de productos) y List<Integer> para guardar números (precios).
+ * 
+ * Las listas pertenecen a una parte de Java llamada "colecciones" y se crean con la ayuda de ArrayList.
+ */
+
 package Listas;
 
 import java.util.List;
