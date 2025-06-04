@@ -5,7 +5,7 @@ import java.util.Queue;       // Usamos la interfaz Queue
 
 public class G_Colas {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         // Creamos la cola para los clientes
         Queue<String> cola = new LinkedList<>();
@@ -27,15 +27,26 @@ public class G_Colas {
         String atendido1 = cola.poll();  // Ana
         System.out.println("Atendiendo a: " + atendido1);
 
-        System.err.println("Aplicamos el metodo POLL para quitar a " + atendido1);
         
+        Thread.sleep(100);
+        
+        System.err.println("Aplicamos el metodo POLL para quitar a " + atendido1);    
         String atendido2 = cola.poll();  // Bruno
+        
+        Thread.sleep(100);
+        
         System.out.println("Atendiendo a: " + atendido2);
 
-        System.err.println("Aplicamos el metodo POLL para quitar a " + atendido2);
+        Thread.sleep(100);
         
+        System.err.println("Aplicamos el metodo POLL para quitar a " + atendido2);
         String atendido3 = cola.poll();  // Carlos
+        
+        Thread.sleep(100);
+        
         System.out.println("Atendiendo a: " + atendido3);
+        
+        Thread.sleep(100);
 
         System.err.println("Aplicamos el metodo POLL para quitar a " + atendido3);
         
